@@ -32,6 +32,7 @@ public class GitTest {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver = new ChromeDriver();
+			
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "Resource/geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -39,6 +40,7 @@ public class GitTest {
 		} else if (browser.equals("ie")) {
 			System.setProperty("webdriver.ie.driver", "Resource/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
+			
 		} else {
 			throw new RuntimeException("Browser not found");
 
